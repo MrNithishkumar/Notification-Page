@@ -1,0 +1,253 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'poppins',sans-serif;
+    width: 100%;
+    background-color: black;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color: #fff;
+    background-color: #323232;
+}
+
+.navbar h1{
+    padding-left: 20px;
+    text-shadow: 2px 2px 4px black;
+    letter-spacing: 0.5px;
+    cursor: default;
+}
+
+.navbar-icons{
+    display: flex;
+    gap: 50px;
+    padding-right: 40px;
+}
+
+.navbar-icons i{
+    font-size: 20px;
+    text-shadow: 2px 2px 4px black;
+    cursor: pointer;
+}
+
+.navbar-icons i:hover{
+    color: gray;
+}
+
+.notification-box-align{
+    display: grid;
+    place-items: center;
+}
+
+.notification-box{
+    width: 500px;
+    background-color: #323232;
+    margin: 50px 0 50px 50px;
+    border-radius: 20px;
+}
+
+.notification-title{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+}
+
+.notification-title h3{
+    color: #fff;
+    padding-left: 10px;
+    text-shadow: 2px 2px 4px black;
+}
+
+.mark-read{
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.mark-read h5{
+    color: gray;
+    padding-left: 10px;
+    text-shadow: 2px 2px 4px black;
+    cursor: default;
+}
+
+.notification-box .line{
+    width: 100%;
+    height: 2px;
+    background-color: rgb(66, 59, 59);
+}
+
+.notification-option{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.notification-list{
+    display: flex;
+    gap: 40px;
+    padding-left: 20px;
+    text-shadow: 2px 2px 4px black;
+    cursor: pointer;
+}
+
+.inbox{
+    color: white;
+}
+
+.team{
+    color: gray;
+}
+
+.notification-option i{
+    font-size: 20px;
+    padding-right: 20px;
+    color: gray;
+    text-shadow: 2px 2px 4px black;
+}
+
+.message-page{
+    padding: 20px;
+    color: #fff;
+}
+
+.message{
+    display: flex;
+    padding-top: 15px;
+}
+
+.message img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.profile-details{
+    padding-left: 20px;
+}
+
+.profile-details p{
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    color: grey;
+}
+
+.request-btn{
+    display: flex;
+    gap: 10px;
+    padding-top: 10px;
+}
+
+.accept-btn{
+    width: 90px;
+    height: 30px;
+    font-size: 13px;
+    font-weight: bold;
+    border: none;
+    background-color: blue;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.decline-btn{
+    width: 90px;
+    height: 30px;
+    font-size: 13px;
+    font-weight: bold;
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: gray;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.team-box{
+    display: none;
+}
+
+.attached-file{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 10px;
+    padding: 10px 20px 10px 20px;
+    background-color: rgb(45, 41, 41);
+    border-radius: 10px;
+}
+
+.attached-file i{
+    font-size: 28px;
+    color: green;
+}
+
+.attached-file button{
+    width: 90px;
+    height: 30px;
+    font-size: 13px;
+    font-weight: bold;
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: gray;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.attached-file button:hover{
+    background-color: blue;
+    border: none;
+    color: #fff;
+}
+
+@media screen and (max-width: 768px){
+    .navbar h1{
+        padding-left: 10px;
+        font-size: 18px;
+    }
+
+    .navbar-icons{
+        display: flex;
+        gap: 20px;
+        padding-right: 10px;
+    }
+
+    .navbar-icons i{
+        font-size: 18px;
+    }
+
+    .notification-box{
+        width: 350px;
+        background-color: #323232;
+        margin: 50px 0 50px  0;
+    }
+
+    .attached-file{
+        gap: 10px;
+    }
+
+    .file-name h5{
+        font-size: 10px;
+    }
+
+    .file-name p{
+        font-size: 10px;
+    }
+
+    .attached-file button{
+        margin-left: 0px;
+        font-size: 10px;
+    }
+
+}
